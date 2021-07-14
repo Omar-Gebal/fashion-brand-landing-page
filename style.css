@@ -1,13 +1,140 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body {
-    background-color: black;
-}
-#header-img {
-    padding: 10px;
-    width: 10vh;
-    height: 10vh;
-}
+    :root{
+        --main-colour: black;
+        --nav-bar: #0B0C0C;
+    }
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        background-color:  var(--main-colour) ;
+    }
+    #slogan
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15vh;
+    }
+    h1
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+    h2
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+    #header-img {
+        width: 200px ;
+        height: auto;
+        margin-right: auto;
+    }
+
+    #video {
+        padding-top: 10vh;
+        width: 100%;
+        margin-top: 0vh;
+        padding: 0 30vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;   
+    }
+
+    li {
+
+        display: inline;
+    }
+
+
+    header {
+        position: fixed;
+        top: 0;
+        min-height: 10vh;   
+        width: 100%;
+        display: flex;
+        align-items: center; 
+        justify-content: flex-end;
+        background-color: var(--nav-bar);
+    }
+
+    .nav-link{
+        list-style-type: none;
+        padding: 20px 2vw;
+    }
+
+    li > a {
+        text-decoration: none;
+        color: white;
+    }
+
+    li > a:hover {
+        background-color: rgb(59, 225, 247);
+        color: black;
+    }
+    form
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    #email
+    {
+        width: 40%;
+        height: 40px;
+        padding: 10px;
+    }
+    #submit
+    {
+        width: 5%;
+        margin-left: 10px;
+        padding: 5px;
+        height: 40px;
+    }
+
+    /*tablets*/
+    @media only screen and (max-width: 1200px){
+        #video {
+            padding-top: 10vh;
+            width: 100%;
+            margin-top: 0vh;
+            padding: 0 10vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    /*Big smartphones [426px -> 600px]*/
+    @media only screen and (max-width: 600px){
+        h1{
+            font-size: 1.5rem;
+        }
+        h2{
+            font-size: 0.8rem;
+        }
+        #header-img {
+            width: 100px ;
+        }
+        #submit
+        {
+            width: 20%;
+            margin-left: 10px;
+            padding: 5px;
+            height: 40px;
+        }
+        
+    }
